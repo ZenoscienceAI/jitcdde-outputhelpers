@@ -1,8 +1,8 @@
 Metadata-Version: 2.4
-Name: jitcdde-outputHelpers
+Name: jitcdde-outputhelpers
 Version: 0.1.0
-Summary: A wrapper for jitcdde that enables to output the intermediate helper variables alongside the states.
-Home-page: https://github.com/ZenoscienceAI/jitcdde-outputHelpers
+Summary: A wrapper for jitcdde that enables outputting the intermediate helper variables alongside the states.
+Home-page: https://github.com/ZenoscienceAI/jitcdde-outputhelpers
 Author: Zenos.AI
 Author-email: zenoscience.ai@gmail.com
 License: MIT License
