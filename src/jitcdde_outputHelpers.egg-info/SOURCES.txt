@@ -4,6 +4,7 @@ pyproject.toml
 setup.cfg
 src/jitcdde_outputhelpers/__init__.py
 src/jitcdde_outputhelpers/customjitcdde.py
+src/jitcdde_outputhelpers/jitced_adapted_template.c
 src/jitcdde_outputhelpers.egg-info/PKG-INFO
 src/jitcdde_outputhelpers.egg-info/SOURCES.txt
 src/jitcdde_outputhelpers.egg-info/dependency_links.txt

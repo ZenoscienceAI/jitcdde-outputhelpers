@@ -16,7 +16,7 @@ Requires-Dist: Jinja2==3.1.2
 Requires-Dist: jitcdde==1.8.3
 Dynamic: license-file
 
-# jitcdde-outputHelpers
+# jitcdde-outputhelpers
 
 A **wrapper** for [`jitcdde`](https://github.com/neurophysik/jitcdde) that enables to **output the intermediate helper variables** alongside the states.
 
@@ -29,15 +29,15 @@ The wrapper replaces the default C code template with a custom one, allowing acc
 - **`jitced_adapted_template.c`**  
   Dynamic C template for optimized code generation (replaces the original `jitcdde` template).
 
-- **`CustomJiTCDDE.py`**  
-  Python wrapper exposing a `customjitcdde` class with enhanced functionality.
+- **`customjitcdde.py`**  
+  Python wrapper exposing a `CustomJiTCDDE` class with enhanced functionality.
 
 ---
 
 ## Usage
 
 ```python
-from CustomJiTCDDE import customjitcdde
+from customjitcdde import CustomJiTCDDE
 from jitcdde import y, t
 import numpy as np
 
@@ -46,7 +46,7 @@ equations = [...]  # your DDE system
 helpers  = [...]   # symbolic helper expressions
 
 # Initialize the custom DDE
-DDE = customjitcdde(equations, helpers=helpers)
+DDE = CustomJiTCDDE(equations, helpers=helpers)
 
 # Configure as with regular jitcdde (anchors, constants, etc.)
 # ...
@@ -66,11 +66,11 @@ If you use this code in your research, teaching, or publications, please cite an
 ```bibtex
 @misc{ZenosAI2025,
   author       = {Zenos.AI},
-  title        = {jitcdde_Wrapper},
+  title        = {jitcdde_outputhelpers},
   year         = {2025},
   publisher    = {GitHub},
   journal      = {GitHub repository},
-  howpublished = {\url{https://github.com/ZenoscienceAI/jitcdde-outputHelpers}},
+  howpublished = {\url{https://github.com/ZenoscienceAI/jitcdde-outputhelpers}},
   note         = {Accessed: November 2025}
 }
 ```
