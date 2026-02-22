@@ -16,7 +16,7 @@ class CustomJiTCDDE(jitcdde):
     """
     A wrapper around JitCDDE that:
     - Uses a custom C template from a file
-    - Provides a custom integrate() method that also outputs the helper values
+    - Provides a custom integrate() method that also outputs helper values
 
     Attributes:
         number_of_helpers: The number of helpers
