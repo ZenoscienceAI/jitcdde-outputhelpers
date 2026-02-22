@@ -27,7 +27,7 @@ class CustomJiTCDDE(jitcdde):
         self,
         *args: tuple[Any, ...],
         helpers: Thelpers | None = None,
-        **kwargs: dict[str, Any],
+        **kwargs: Any,
     ):
         """Initializes 'CustomJiTCDDE' by loading the template path, calculating the
         number of helpers, and setting both the helpers, the arguments and the kwargs.
@@ -60,7 +60,7 @@ class CustomJiTCDDE(jitcdde):
         with open(custom_template_path, "r", encoding="utf-8") as f:
             return f.read()
 
-    def _render_template(self, **kwargs: dict[str, Any]):
+    def _render_template(self, **kwargs: Any):
         """Adapted code to use Jinja2 to render a template for the module. Now, we use
         our own template."""
         kwargs["module_name"] = self._modulename
